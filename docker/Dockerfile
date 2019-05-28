@@ -30,9 +30,9 @@ RUN docker-php-ext-install gd
 RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 
-COPY ./app/ /var/www
+COPY ./application/ /var/www
 
-COPY --chown=www:www ./app/ /var/www
+COPY --chown=www:www ./application/ /var/www
 
 USER www
 
