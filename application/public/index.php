@@ -14,4 +14,7 @@ require __DIR__ . '/../app/Core/AutoLoading/autoLoading.php';
  */
 require __DIR__ . '/../app/Core/Helpers/helpers.php';
 
-\Action\Core\Logger\Logger::debug("test");
+use Action\Core\Cache\CacheItem;
+use Action\Core\Cache\CacheItemPool;
+
+$pool = new CacheItemPool();
